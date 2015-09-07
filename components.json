@@ -1,0 +1,33 @@
+{
+    "title": "hello world Java",
+    "description": "Hello world component for the elastic.io platform",
+    "credentials": {
+        "fields": {
+            "name": {
+                "label": "Your name",
+                "required": true,
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "getHello": {
+            "main": "io.elastic.helloworld.triggers.GetHello",
+            "type": "polling",
+            "title": "Query Hello",
+            "metadata": {
+                "out": "./src/main/schemas/getHello.out.json"
+            }
+        }
+    },
+    "actions": {
+        "updateHello": {
+            "main": "io.elastic.helloworld.actions.UpdateHello",
+            "title": "Update Hello",
+            "metadata": {
+                "in": "./src/main/schemas/updateHello.in.json",
+                "out": "./src/main/schemas/updateHello.out.json"
+            }
+        }
+    }
+}
