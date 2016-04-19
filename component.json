@@ -2,6 +2,7 @@
     "title": "hello world Java",
     "language" : "java",
     "description": "Hello world component for the elastic.io platform",
+    "docsUrl":"https://github.com/elasticio/hello-world-java",
     "credentials": {
         "fields": {
             "name": {
